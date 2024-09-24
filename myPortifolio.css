@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+.box {
+    @apply border-2 border-black p-4 bg-teal-200 hover:shadow-black shadow-xl h-auto w-auto flex flex-col justify-center rounded-2xl 
+}
+
+button {
+    @apply border-black border-2 pl-2 pr-2 rounded-full text-black bg-blue-200 hover:bg-cyan-300
+}
+
+.box1 {
+    @apply border-2 border-black p-4 bg-teal-200 hover:shadow-black shadow-xl md:h-auto md:w-auto flex flex-col justify-center rounded-2xl
+}
+
+.box2{
+    @apply border-black border-2 p-5 md:w-[70%] md:rounded-r-full bg-teal-200 flex w-80
+}
+
+#dntheme:checked ~ label .fa-sun {
+    @apply opacity-0 translate-x-0
+}
+
+#dntheme:checked ~ label .fa-moon {
+    @apply opacity-100 -translate-x-6
+}
+
+.peer:checked nav {
+    @apply bg-black
+}
+
+@tailwind utilities;
